@@ -170,7 +170,6 @@ class MainActivity : AppCompatActivity() {
                 val contentSelectionIntent = Intent(Intent.ACTION_GET_CONTENT)
                 contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE)
                 contentSelectionIntent.type = "image/*"
-                contentSelectionIntent.type = "*/*"
                 contentSelectionIntent.type = "pdf/*"
                 val intentArray: Array<Intent?> =
                     takePictureIntent?.let { arrayOf(it) } ?: arrayOfNulls(0)
